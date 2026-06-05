@@ -1,0 +1,43 @@
+arxiv:
+  categories:
+    - "cs.AR"
+    - "cs.ET"
+    - "cs.LG"
+    - "cs.CV"
+  max_results_per_category: 200
+  lookback_days: 7
+
+semantic_scholar:
+  search_queries:
+    - "integrated circuit design"
+    - "electronic design automation"
+    - "VLSI design automation"
+    - "FPGA architecture"
+    - "EDA machine learning"
+    - "physical design automation"
+    - "logic synthesis optimization"
+    - "hardware verification"
+  venues:
+    - "IEEE Transactions on Image Processing"
+    - "IEEE Transactions on Consumer Electronics"
+    - "ACM Transactions on Reconfigurable Technology and Systems"
+    - "FCCM"
+    - "FPL"
+  max_results_per_query: 50
+
+scoring:
+  keyword_weight: 0.50
+  source_weight: 0.30
+  recency_weight: 0.20
+  min_score_threshold: 0.3
+
+source_weights:
+  "DAC": 1.0
+  "ICCAD": 1.0
+  "ISSCC": 1.0
+  "IEEE TIP": 0.9
+  "IEEE TCE": 0.8
+  "ACM FPGA": 0.9
+  "FCCM": 0.9
+  "FPL": 0.9
+  "ArXiv": 0.6
